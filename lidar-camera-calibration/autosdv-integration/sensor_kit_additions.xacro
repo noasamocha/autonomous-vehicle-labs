@@ -1,0 +1,41 @@
+<!-- Joints added inside sensor_kit_macro in AutoSDV's autosdv_sensor_kit_description
+     urdf/sensor_kit.xacro. The rest of the file is AutoSDV's and is not included. -->
+    <!-- Lab 1: virtual camera link from calibration T6 -->
+    <link name="lab1_t6_camera_link"/>
+    <joint name="lab1_t6_camera_joint" type="fixed">
+      <parent link="sensor_kit_base_link"/>
+      <child link="lab1_t6_camera_link"/>
+      <origin
+        xyz="${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['x']} ${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['y']} ${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['roll']} ${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['pitch']} ${calibration['sensor_kit_base_link']['lab1_t6_camera_link']['yaw']}"/>
+    </joint>
+
+    <!-- Lab 1: virtual camera link from calibration T4 -->
+    <link name="lab1_t4_camera_link"/>
+    <joint name="lab1_t4_camera_joint" type="fixed">
+      <parent link="sensor_kit_base_link"/>
+      <child link="lab1_t4_camera_link"/>
+      <origin
+        xyz="${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['x']} ${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['y']} ${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['roll']} ${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['pitch']} ${calibration['sensor_kit_base_link']['lab1_t4_camera_link']['yaw']}"/>
+    </joint>
+
+    <!-- Lab 1: virtual camera link from calibration T2 -->
+    <link name="lab1_t2_camera_link"/>
+    <joint name="lab1_t2_camera_joint" type="fixed">
+      <parent link="sensor_kit_base_link"/>
+      <child link="lab1_t2_camera_link"/>
+      <origin
+        xyz="${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['x']} ${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['y']} ${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['roll']} ${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['pitch']} ${calibration['sensor_kit_base_link']['lab1_t2_camera_link']['yaw']}"/>
+    </joint>
+
+    <!-- Lab 1: virtual camera link from calibration T1 -->
+    <link name="lab1_t1_camera_link"/>
+    <joint name="lab1_t1_camera_joint" type="fixed">
+      <parent link="sensor_kit_base_link"/>
+      <child link="lab1_t1_camera_link"/>
+      <origin
+        xyz="${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['x']} ${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['y']} ${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['z']}"
+        rpy="${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['roll']} ${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['pitch']} ${calibration['sensor_kit_base_link']['lab1_t1_camera_link']['yaw']}"/>
+    </joint>
